@@ -1,6 +1,57 @@
 <?php 
     // CONSTANTS
     define("TITLE", "Introduction to PHP"); 
+
+    if(isset($_POST["fix_submit"]) ) {
+
+        // grab value from textarea in $_POST collection
+        // make all letters lowercase using strtolower() function
+        // store in a variable
+
+        // $clickBait = strtolower($_POST["clickBait_headline"]);
+
+        // store array of clickbait-sounding words or phrases
+        $a = Array(
+            "scientists",
+            "doctors",
+            "hate",
+            "stupid",
+            "weird",
+            "simple",
+            "trick",
+            "shocked me",
+            "you'll never believe",
+            "hack",
+            "epic",
+            "unbelievable"
+        );
+
+        // store array of replacement words or phrases
+        // make sure each replacement is in the same order
+        // as the click bait word you're trying to replace
+
+        $b = Array(
+            "so-called scientists",
+            "so-called doctors",
+            "aren't threatened by",
+            "average",
+            "completely normal",
+            "ineffective",
+            "method",
+            "is no different than the others",
+            "you won't really be surprised by",
+            "slightly improve",
+            "boring",
+            "normal" 
+        );
+
+        // use the str_replace function to replace the words
+        // uppercase the first letter in every word using ucwords() function
+        // store in a varible
+
+        // $honestHeadline = str_replace($a, $b, $clickBait);
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,23 +71,27 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>Honest Click Bait Headlines</h1>
-        <p>Hate click bait? Turn those annoying headlines into realistic and honest one using simple program</p>
-        <form action="" id="form">
-            <textarea name="" id="" cols="50" rows="3" placeholder="Paste click bait headline here..."></textarea>
+    <h1>Honest Click Bait Headlines <br></h1>
+    <p class="lead">
+        Hate click bait? Turn those annoying headlines into realistic and honest one using simple program
+    </p>
 
-            <button class="btn btn-large btn-primary">Fix it</button>
-        </form>
+    <form class="col-sm-8 col-sm-offset-2" action="" method="post">
+
+        <textarea placeholder="Paste click bait headline here..." class="form-control input-md" name="clickbait_headline"></textarea> <br>
+
+        <button type="submit" class="btn btn-primary btn-md pull-right" name="fix_submit">Make honest</button>
+    </form>
+
+    <?php 
+        if(isset( $_POST["fix_submit"])) {
+            echo $honestHeadline;
+        }
+    ?>
        
-    <br>
-    <br>
-    <br>
-        <?php 
-
-            
-        ?>
+ 
     </div>
     
 <!-- Boostrap JS -->
