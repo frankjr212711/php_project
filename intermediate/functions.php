@@ -1,6 +1,6 @@
 <?php 
     // CONSTANTS
-    define("TITLE", "Introduction to PHP"); 
+    define("TITLE", "Functions"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,45 +12,30 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <link href="/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
 
-    <title>PHP Syntax <?php echo TITLE; ?></title>
+    <title>PHP Intermediate <?php echo TITLE; ?></title>
 
 </head>
 <body>
-
-
-    <?php 
-
-        echo "hello, world in a brackets";
-        echo ("Hello, world :) ");
-    ?>
+    <div class="container">
+        <h1><?php echo TITLE?></h1>
+ 
+    </div>
 
     <?php 
-        print('hello world <br>');
-        Print('Hello World <br>');
-        PRINT('HELLO WORLD <br><br>');
-    
         
+    
+    
+    
     ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 <!-- Boostrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
-</html>
