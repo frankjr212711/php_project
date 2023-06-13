@@ -1,6 +1,6 @@
 <?php 
     // CONSTANTS
-    define("TITLE", "Introduction to PHP"); 
+    define("TITLE", "PHP ARRAYS"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,8 +21,9 @@
 <body>
 
 
-    <?php 
-//   ASSOCIATIVE ARRAY
+    <?php
+
+    //  ASSOCIATIVE ARRAY
             $people = Array(
                         "userName"  => "john_doe",
                         "fullName"  => "John Doe",
@@ -31,23 +32,21 @@
                         "Country"   => "Mexico"
             );
         
+    // ECO VALUES OF THE ARRAY 
+            echo $people["userName"] ."<br>";
+            echo $people["fullName"] ."<br>";
+            echo $people["Age"]      ."<br>";
+            echo $people["Gender"]   ."<br>";
+            echo $people["Country"]  ."<br> <br>";
 
-            // ECO VALUES OF THE ARRAY 
-                echo $people["userName"] ."<br>";
-                echo $people["fullName"] ."<br>";
-                echo $people["Age"]      ."<br>";
-                echo $people["Gender"]   ."<br>";
-                echo $people["Country"]  ."<br> <br>";
-
-            // MULTI-DIMENSIONAL ARRAY 
-            
-            $employees = Array(
-                Array( // index 0
-                        "userName"  => "john_doe",
-                        "fullName"  => "John Doe",
-                        "Age"       => 35,
-                        "Gender"    => "Male",
-                        "Country"   => "Mexico"
+    // MULTI-DIMENSIONAL ARRAY         
+        $employees = Array(
+            Array( // index 0
+                    "userName"  => "john_doe",
+                    "fullName"  => "John Doe",
+                    "Age"       => 35,
+                    "Gender"    => "Male",
+                    "Country"   => "Mexico"
                     ),
                     Array( // index 1
                         "userName"  => "jane_doe",
@@ -64,8 +63,9 @@
             echo $employees[0]["Age"] ."<br> <br>"; 
             echo $employees[1]["fullName"] ."<br>";
             echo $employees[1]["Age"] ."<br>";
-
     ?>
+
+
 
 
 <!-- Boostrap JS -->

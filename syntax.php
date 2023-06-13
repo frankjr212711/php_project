@@ -21,12 +21,10 @@
 <body>
 
 
-<?php 
+    <?php 
 
         echo "hello, world in a brackets";
         echo ("Hello, world :) ");
-
-        // comments
     ?>
 
     <?php 
@@ -35,9 +33,6 @@
         PRINT('HELLO WORLD <br><br>');
     
         
-        
-        
-
     ?>
 
 

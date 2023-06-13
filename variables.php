@@ -1,6 +1,6 @@
 <?php 
     // CONSTANTS
-    define("TITLE", "Introduction to PHP"); 
+    define("TITLE", "PHP Variables"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +21,12 @@
 <body>
 
     <div class="container">
-
+        <h1><?php echo TITLE; ?></h1>
         
       
     </div>
     <?php 
+
     // VARIABLES
         $name = "Joe";
         echo "hello " . $name . "<br>";
@@ -61,7 +62,6 @@
             $gender = "Male";
             $country = "Mexico";
 
-
             // SIMPLE ARRAY
             $user = Array(
                         "john_doe",
@@ -78,7 +78,6 @@
             // echo $user[2] ."<br>";
             // echo $user[3] ."<br>";
             // echo $user[4] ."<br>";
- 
     ?>
     
 <!-- Boostrap JS -->
