@@ -20,25 +20,40 @@
 </head>
 <body>
 
-    <div class="container">
 
-        <h1>Honest Click Bait Headlines</h1>
-        <p>Hate click bait? Turn those annoying headlines into realistic and honest one using simple program</p>
-        <form action="" id="form">
-            <textarea name="" id="" cols="50" rows="3" placeholder="Paste click bait headline here..."></textarea>
+<?php 
 
-            <button class="btn btn-large btn-primary">Fix it</button>
-        </form>
-       
-    <br>
-    <br>
-    <br>
-        <?php 
+        echo "hello, world in a brackets";
+        echo ("Hello, world :) ");
 
-            
-        ?>
-    </div>
+        // comments
+    ?>
+
+    <?php 
+        print('hello world <br>');
+        Print('Hello World <br>');
+        PRINT('HELLO WORLD <br><br>');
     
+        
+        
+        
+
+    ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Boostrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
